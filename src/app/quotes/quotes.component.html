@@ -1,3 +1,4 @@
+<div class="container-fluid">
 <h1>
   MAYA ANGELOU'S FAVORITE QUOTES
 </h1>
@@ -9,8 +10,9 @@
       Quote: {{ quote.quote}}
     </li>
     
-    <button (click)='toogleDetails(i)'>Show Details </button>
+    <button class="btn btn-primary"(click)='toogleDetails(i)'>Show Details </button>
     <br>
    <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-details>
   </div>
 </ul>
+</div>
