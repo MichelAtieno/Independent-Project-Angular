@@ -1,0 +1,16 @@
+<h1>
+  MAYA ANGELOU'S FAVORITE QUOTES
+</h1>
+  <br>
+<ul>
+  <div *ngFor='let quote of quotes; let i = index'>
+   <li>
+      Author: {{quote.author}} <br> 
+      Quote: {{ quote.quote}}
+    </li>
+    
+    <button (click)='toogleDetails(i)'>Show Details </button>
+    <br>
+   <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-details>
+  </div>
+</ul>
