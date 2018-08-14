@@ -1,5 +1,7 @@
 <p>
- Submitted by: {{ quote.description }}
+ Submitted by: {{ quote.description }} 
+ <br>
+ On: {{ quote.completeDate | date }}
 </p>
 <button class="btn btn-danger"(click) = 'quoteComplete(true)'>
   Delete

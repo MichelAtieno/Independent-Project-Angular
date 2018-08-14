@@ -9,9 +9,9 @@ import { Quote } from '../quote';
 export class QuotesComponent implements OnInit {
 
   quotes = [
-    new Quote("Maya Angelou","If you don't like something change it. If you can't change anything change your attitude.","Michel"),
-    new Quote("Maya Angelou","People will forget what you said,people will forget what you did, but people will never forget how you made them feel","Susan"),
-    new Quote("Maya Angelou","Nothing will work unless you do.","Jerusha"),
+    new Quote("Maya Angelou","If you don't like something change it. If you can't change anything change your attitude.","Michel", new Date(2018,5,23) ),
+    new Quote("Maya Angelou","People will forget what you said,people will forget what you did, but people will never forget how you made them feel","Susan", new Date(2018,5,24) ),
+    new Quote("Maya Angelou","Nothing will work unless you do.","Jerusha", new Date(2018,5,25) ),
   ]
   toogleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;

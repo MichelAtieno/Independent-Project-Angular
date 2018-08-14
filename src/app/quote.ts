@@ -3,7 +3,8 @@ export class Quote {
     constructor( 
         public author:string,
         public quote: string,
-        public description: string
+        public description: string,
+        public completeDate: Date
         ){
         this.showDescription = false;  
         }
