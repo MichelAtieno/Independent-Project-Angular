@@ -1,15 +1,19 @@
 <div class="container-fluid">
-      <form>
+
+      <form #quoteForm='ngForm'>
+
         <div class="form-group">
           <label for="author">Author</label>
-          <input type="text" class="form-control" id="author">
+          <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author">
         </div>
         <br>
+
         <div class="form-group">
            <label for="quote">Quote</label>
-           <input type="text" class="form-control" id="quote">
+           <input type="text" class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote">
          </div>
          <br>
+
          <button class="btn btn-success" type="submit">Submit</button>
        </form>
        <ul>
