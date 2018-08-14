@@ -21,7 +21,15 @@ export class QuotesComponent implements OnInit {
     if (isComplete){
       this.quotes.splice(index,1);
     }
-  }
+  } 
+
+  addNewQuote($event) {
+    $event.completeDate=new Date();
+    this.quotes.unshift($event);
+  }  
+ 
+
+
   constructor() { }
 
   ngOnInit() {

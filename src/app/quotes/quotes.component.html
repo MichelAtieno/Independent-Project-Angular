@@ -9,10 +9,14 @@
              Author: {{quote.author}} <br> 
              Quote: {{ quote.quote}}
            </li>
-           
+         
            <button class="btn btn-primary"(click)='toogleDetails(i)'>Show Details </button>
            <br>
           <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-details>
-         </div>
+          </div>
+          
+          <app-form (addQuote)="addNewQuote($event)"></app-form>
        </ul>
       </div>
+
+      
