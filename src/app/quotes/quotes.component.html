@@ -1,7 +1,19 @@
-<div class="container-fluid">
-        <h1>
-            MAYA ANGELOU'S FAVORITE QUOTES
-         </h1>
+
+
+<div class="container-fluid" ng-style="myStyle">
+
+    <h1 id="heading" ng-style="myStyle">
+        MAYA ANGELOU'S FAVORITE QUOTES
+     </h1>
+  
+   <div class="row">
+
+     <div class="col-md-6">
+       <app-form (addQuote)="addNewQuote($event)"></app-form>
+       </div>
+
+       <div class="col-md-6">
+        
          <br>
        <ul>
          <div *ngFor='let quote of quotes; let i = index'>
@@ -13,10 +25,11 @@
            <button class="btn btn-primary"(click)='toogleDetails(i)'>Show Details </button>
            <br>
           <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-details>
-          </div>
-          
-          <app-form (addQuote)="addNewQuote($event)"></app-form>
+          </div> 
        </ul>
+       </div>
+       
+      </div>
       </div>
 
       
