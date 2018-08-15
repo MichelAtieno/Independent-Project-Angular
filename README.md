@@ -20,7 +20,8 @@ No bugs so far. If found, email me at mishqamish@gmail.com
 1. HTML
 2. Bootstrap
 3. Angular JS
-Support and contact details
+
+# Support and contact details
 Contact me on mishqamish@gmail.com for any comments, reviews or advice.
 
 # License MIT
