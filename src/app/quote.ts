@@ -1,6 +1,6 @@
 export class Quote {
     public showDescription: boolean;
-    public vote: number;
+    public vote = 0;
     public maxCount = 0;
     constructor(
         public author: string,
