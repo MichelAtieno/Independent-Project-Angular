@@ -1,10 +1,13 @@
 export class Quote {
-    public showDescription:boolean;
-    constructor( 
-        public author:string,
+    public showDescription: boolean;
+    public vote: number;
+    public maxCount = 0;
+    constructor(
+        public author: string,
         public quote: string,
-        public description: string
-        ){
-        this.showDescription = false;  
+        public description: string,
+        public completeDate: Date,
+        ) {
+        this.showDescription = false;
         }
 }

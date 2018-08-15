@@ -1,16 +1,44 @@
-<h1>
-  MAYA ANGELOU'S FAVORITE QUOTES
-</h1>
-  <br>
-<ul>
-  <div *ngFor='let quote of quotes; let i = index'>
-   <li>
-      Author: {{quote.author}} <br> 
-      Quote: {{ quote.quote}}
-    </li>
-    
-    <button (click)='toogleDetails(i)'>Show Details </button>
-    <br>
-   <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-details>
-  </div>
-</ul>
+
+
+<div class="container-fluid" ng-style="myStyle">
+
+    <h1 id="heading" ng-style="myStyle">
+        MAYA ANGELOU'S FAVORITE QUOTES
+     </h1>
+  
+   <div class="row">
+
+     <div class="col-md-6">
+       <app-form (addQuote)="addNewQuote($event)"></app-form>
+       </div>
+
+       <div class="col-md-6">
+        
+         <br>
+       <ul>
+         <div *ngFor='let quote of quotes; let i = index'>
+            <div *ngIf="quote.vote===maxCount && quote.vote>0">
+                <!-- {{maxCount}} -->
+              </div>
+          <li>
+             Author: {{quote.author}} <br> 
+             Quote: {{ quote.quote}}
+           </li>
+           <div>
+             <button class="btn btn-primary"(click)='toogleDetails(i)'>Show Details </button>
+           </div>
+           <div>
+             <button class="btn btn-success" (click)="addVotes(i)">Upvote</button>
+           </div>
+           <div>
+             <button class="btn btn-danger" (click)="minusVotes(i)">Downvote</button>
+           </div>
+          <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-details>
+          </div> 
+       </ul>
+       </div>
+       
+      </div>
+      </div>
+
+      

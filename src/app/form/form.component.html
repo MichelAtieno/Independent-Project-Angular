@@ -1,0 +1,24 @@
+<div class="container-fluid">
+
+      <form  (ngSubmit)='onSubmit()' >
+
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" class="form-control" id="author" [(ngModel)]="this.newQuote.author" name="author">
+        </div>
+        <br>
+        <div class="form-group">
+           <label for="quote">Quote</label>
+           <input type="text" class="form-control" id="quote" [(ngModel)]="this.newQuote.description" name="quote">
+         </div>
+         <br>
+         <div class="form-group">
+            <label for="quote">Submitted by</label>
+            <input type="text" class="form-control" id="quote" [(ngModel)]="this.newQuote.quote" name="quote">
+          </div>
+         <button class="btn btn-primary" type="submit">Submit</button>
+       </form>
+       <ul>
+
+       </ul>
+       </div>
