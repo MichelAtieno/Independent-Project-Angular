@@ -17,13 +17,12 @@
          <br>
        <ul>
          <div *ngFor='let quote of quotes; let i = index'>
-            <div *ngIf="quote.vote===maxCount && quote.vote>0">
-                <!-- {{maxCount}} -->
-              </div>
+            <div *ngIf="quote.vote===maxCount && quote.vote>0"></div>
           <li>
-             Author: {{quote.author}} <br> 
-             Quote: {{ quote.quote}}
+             Author: {{ quote.author }} <br> 
+             Quote: {{ quote.quote }}
            </li>
+           <p> {{ quote.completeDate|dateCount }} days ago</p>
            <div>
              <button class="btn btn-primary"(click)='toogleDetails(i)'>Show Details </button>
            </div>
