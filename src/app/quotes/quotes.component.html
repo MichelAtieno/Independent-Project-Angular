@@ -17,8 +17,8 @@
          <br>
        <ul>
          <div *ngFor='let quote of quotes; let i = index'>
-            <div *ngIf="quote.vote===maxCount && quote.vote>0"></div>
-          <li>
+            <div id="{{i}}" appHighlight *ngIf="quote.vote===maxCount && quote.vote>0"></div>
+          <li id="{{i}}">
              Author: {{ quote.author }} <br> 
              Quote: {{ quote.quote }}
            </li>
