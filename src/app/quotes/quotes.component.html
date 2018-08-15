@@ -17,13 +17,22 @@
          <br>
        <ul>
          <div *ngFor='let quote of quotes; let i = index'>
+            <div *ngIf="quote.vote===maxCount && quote.vote>0">
+                <!-- {{maxCount}} -->
+              </div>
           <li>
              Author: {{quote.author}} <br> 
              Quote: {{ quote.quote}}
            </li>
-         
-           <button class="btn btn-primary"(click)='toogleDetails(i)'>Show Details </button>
-           <br>
+           <div>
+             <button class="btn btn-primary"(click)='toogleDetails(i)'>Show Details </button>
+           </div>
+           <div>
+             <button class="btn btn-success" (click)="addVotes(i)">Upvote</button>
+           </div>
+           <div>
+             <button class="btn btn-danger" (click)="minusVotes(i)">Downvote</button>
+           </div>
           <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-details>
           </div> 
        </ul>
