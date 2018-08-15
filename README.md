@@ -3,7 +3,7 @@
 # First Independent project
 # By Michel Atieno on August 15th, 2018
 
-#Description
+# Description
 This project is a webpage that allows users to enter quotes, and display them on the view of the user.
 Once the user submits the form-details, the details appear on the right section of the webpage.
 The author of the quote,the number of votes the quotes have and the number of days since the quote was posted are hidden in the details section. Pressing the "show details"button will reveal the details.
