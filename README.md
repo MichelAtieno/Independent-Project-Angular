@@ -9,14 +9,9 @@ The author of the quote,the number of votes the quotes have and the number of da
 The details section also has a delete button which will delete the quote and its details from the page.
 A user can add or reduce the number of votes by pressing the upvote or downvote button respectively. The quote with the highest quote becomes highlighted.
 
-Specifications
-Behavior	Input	Output
-Displaying Quote	Name, Date & Quote	Displays Quote and number of days passed
-Show Details	Details button	Displays the Author of quote and number of likes
-Number of likes	Press thumbs-up or thumbs-down button	Increases or decreases number of likes
 Preview
 Click here ( https://michelatieno.github.io/Independent-Project-Angular/ ) to see the live site.
- 
+
 Known Bugs
 No bugs so far. If found, email me at mishqamish@gmail.com
 
@@ -27,5 +22,5 @@ Technologies Used
 Support and contact details
 Contact me on mishqamish@gmail.com for any comments, reviews or advice.
 
-License
+License MIT
 Copyright (c) Michel Atieno.
