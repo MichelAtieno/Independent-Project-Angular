@@ -4,6 +4,7 @@
  On: {{ quote.completeDate | date }}
 </p>
  <p>Votes: {{quote.vote}}</p>
+ <p>Time since posted: {{ quote.completeDate|dateCount}} Days ago</p>
 <button class="btn btn-danger"(click) = 'quoteComplete(true)'>
   Delete
 </button>
