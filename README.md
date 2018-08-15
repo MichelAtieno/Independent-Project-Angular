@@ -1,6 +1,6 @@
-#Quotes by Angular
+# Quotes by Angular
 
-#First Independent project
+# First Independent project
 # By Michel Atieno on August 15th, 2018
 
 #Description
@@ -10,18 +10,18 @@ The author of the quote,the number of votes the quotes have and the number of da
 The details section also has a delete button which will delete the quote and its details from the page.
 A user can add or reduce the number of votes by pressing the upvote or downvote button respectively. The quote with the highest quote becomes highlighted.
 
-#Preview
+# Preview
 Click here ( https://michelatieno.github.io/Independent-Project-Angular/ ) to see the live site.
 
-#Known Bugs
+# Known Bugs
 No bugs so far. If found, email me at mishqamish@gmail.com
 
-#Technologies Used
+# Technologies Used
 1. HTML
 2. Bootstrap
 3. Angular JS
 Support and contact details
 Contact me on mishqamish@gmail.com for any comments, reviews or advice.
 
-#License MIT
-#Copyright (c) Michel Atieno.
+# License MIT
+# Copyright (c) Michel Atieno.
