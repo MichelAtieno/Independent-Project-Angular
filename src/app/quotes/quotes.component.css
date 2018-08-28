@@ -9,6 +9,6 @@
 #navbarNav { 
     font-size: 36px;
     font: white;
-    text-decoration: underline;
-    background-color: ghostwhite;  
+    background-color: ghostwhite;
+    font-weight: 800;
 }
